@@ -1,8 +1,8 @@
 @charset 'utf-8';
 /* ==========================================================================
 Author        :  Arif Lutfhansah
-Create        :  21 Agustus 2017
-Last Update   :  21 Agustus 2017
+Create        :  20 April 2018
+Last Update   :  20 April 2018
 
 Source  :
   1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
@@ -12,45 +12,30 @@ Source  :
 Contents  :
   1: Header Section
 
-  Copyright (c) 2017 Arif Lutfhansah
+  Copyright (c) 2018 Arif Lutfhansah
   
 ========================================================================== */
 
 /*
-  Color
--------------------------------------*/
-$color : #D3A039;
-$primary-bg : #D3A039;
-$secondary-bg : #7D726E;
-
-/*
   Header
 -------------------------------------*/
-.navbar-toggle {
-    position: relative;
-    height: 34px;
-    padding: 9px 10px;
-    margin: 15px 15px 15px 0;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: none;
-    .sr-only {
-	    position: absolute;
-	    width: 1px;
-	    height: 1px;
-	    margin: -1px;
-	    padding: 0;
-	    overflow: hidden;
-	    clip: rect(0, 0, 0, 0);
-	    border: 0;
-	}
-	.icon-bar {
-	    display: block;
-	    width: 22px;
-	    height: 2px;
-	    border-radius: 1px;
-	    background-color: #fff;
-	    + .icon-bar {
-		    margin-top: 4px;
-		}
-	}
+
+/* --- Logo --- */
+.logo {
+  img {
+    padding: 34px 0;
+    zoom: .7;
+  }
+}
+
+/* --- Nav --- */
+nav {
+  ul {
+    float: right;
+  }
+}
+
+/* --- Slicknav --- */
+.slicknav {
+  display: none;
 }
