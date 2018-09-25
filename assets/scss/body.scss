@@ -18,6 +18,21 @@ body {
 section .content {
   padding: 150px 0 0 0;
 }
+/* --- Head --- */
+.head {
+  margin-bottom: 70px;
+  position: relative;
+  color: #96327d;
+  text-align: center;
+  z-index: 6;
+  h2 {
+    font-size: 2.667em;
+  }
+  h4 {
+    margin-bottom: 18px;
+    font-size: 1.333em;
+  }
+}
 /* --- About --- */
 .profile {
   display: table-cell;
@@ -50,19 +65,19 @@ section .content {
 }
 /* --- Memorable Days --- */
 .memorable-days {
-    &:before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 50%;
-      height: 100%;
-      width: 61px;
-      background-image: url('../images/separator.png');
-      background-size: 50%;
-      background-repeat: no-repeat;
-      background-position: center center;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 61px;
+    background-image: url('../images/separator.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   .item {
     margin-bottom: 95px;
