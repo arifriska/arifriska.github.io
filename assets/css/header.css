@@ -1,1 +1,1 @@
-.logo img{padding:34px 0;zoom:.7}nav ul{float:right}.slicknav{display:none}
+.logo img{padding:34px 0;zoom:.7}nav{position:fixed;width:100%;z-index:99}nav ul{float:right}.slicknav{display:none}
