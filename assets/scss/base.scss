@@ -211,8 +211,9 @@ template {
 }
 h1, h2, h3, h4 {
   margin: 0;
+  color: #96327D;
   font-family: 'Great Vibes', cursive;
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 /*
   Sprite
@@ -265,21 +266,19 @@ h1, h2, h3, h4 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (max-width: 857px) {
-}
-@media only screen and (min-width: 858px) and (max-width: 1081px) {
+@media (min-width: 768px) {
   .container {
-    width: 840px;
+      width: 750px;
   }
 }
-@media only screen and (min-width: 1082px) and (max-width: 1289px) {
+@media (min-width: 992px) {
   .container {
-    width: 1060px;
+      width: 970px;
   }
 }
-@media (min-width: 1290px) {
+@media (min-width: 1200px) {
   .container {
-    width: 1260px;
+    width: 1170px;
   }
 }
 .pull-right {
