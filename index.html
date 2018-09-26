@@ -319,6 +319,18 @@
       });
       /* Sidenav */
       $('.sidenav').sidenav();
+      /* --- Membuat Subkanal Navigation Menjadi Fixed --- */
+      $(window).scroll(function() {
+        console.log($(window).scrollTop())
+        if ($(this).scrollTop() > 160){  
+          $("nav").css({"height": "68px", "line-height": "70px", "background-color": "rgba(255,255,255,1)"});
+          $(".logo img").css({"padding": "16px 0"});
+        }
+        else{
+          $("nav").css({"height": "88px", "line-height": "88px", "background-color": "rgba(255,255,255,.6)"});
+          $(".logo img").css({"padding": "29px 0"});
+        }
+      });
       /* Countdown */
       var countdown = new Date("Dec 8, 2018");
       function getRemainingTime(endtime) {

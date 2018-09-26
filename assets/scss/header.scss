@@ -33,6 +33,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 99;
+  @include transition(.3s);
   ul {
     float: right;
   }
