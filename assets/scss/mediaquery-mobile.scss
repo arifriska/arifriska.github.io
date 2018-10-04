@@ -23,7 +23,7 @@ Contents  :
 /* --- Logo --- */
 .logo {
   img {
-    padding: 23px 0;
+    padding: 34px 0;
     zoom: .4;
   }
 }
@@ -32,6 +32,7 @@ nav {
   height: 55px;
   a.sidenav-trigger {
     height: 55px;
+    color: #96327D;
     line-height: 55px;
     i {
       height: 55px;
@@ -52,236 +53,129 @@ nav {
   display: block;
 }
 
+
 /*
   Main
 -------------------------------------*/
-.content {
-  margin-top: 10px;
+section.content {
+  padding: 0 15px;
 }
-.col-md-9, .col-md-6, .col-md-3 {
-  width: 100%;
-  padding: 0;
+/* --- Slider --- */
+.slider .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 19%;
 }
-/* --- Carousel --- */
-.carousel {
-  height: 500px;
-  .carousel-item {
-    top: -150px;
-    width: 100%;
-    height: auto;
-    .category {
-      padding: 0.5em 1em 0.2em;
-      font-size: 12px;
-    }
-    .title {
-      padding: 0 8px;
-      margin: 20px 0 10px;
-      font-size: 24px;
-    }
-    .caption {
-      padding: 0 8px;
-      font-size: 16px;
-    }
-  }
+.slider .bx-wrapper, .bx-viewport {
+    height: 520px !important; //provide height of slider
 }
-/* --- R Center --- */
-.r-center {
-  width: 100%;
-  img {
-    width: 100%;
-  }
+.slider .bx-wrapper {
+  margin-bottom: 0;
 }
-/* --- News --- */
-.news {
-  .category, .title, .caption, .author {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .title {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .author {
-    padding-top: 20px;
-  }
+.slider .bx-wrapper img {
+  position: relative;
+  left: -510px;
+  width: 1320px;
 }
-.big {
-  .news {
-    .title {
-      font-size: 26px;
-      line-height: 32px;
+.slider .bx-controls {
+  display: none;
+}
+/* --- Tagline --- */
+.tagline {
+  top: 130px;
+  h1 {
+    font-size: 3.367em;
+  }
+  h4 {
+    font-size: 1.757em;
+  }
+  .date {
+    &:before, &:after {
+      top: 172px;
     }
   }
 }
-.medium {
-  .news {
-    height: auto;
-    &.col-md-6 {
-      &:nth-child(odd), &:nth-child(even) {
-        padding: 0;
-      }
-      &:nth-child(odd) {
-        margin-bottom: 20px;
-      }
-    }
+.countdown {
+  top: 60px;
+  .countdown__item {
+    padding: 7px 20px;
   }
-}
-.small {
-  .news {
-    margin-bottom: 20px;
-    &:nth-child(odd), &:nth-child(even) {
-      padding: 0;
-    }
-    img {
-      height: auto;
-    }
+  .countdown__timer {
+    font-size: 2.4em;
   }
-}
-/* --- Latest --- */
-.latest-list {
-  .col-md-4 {
-    height: auto;
-    margin-bottom: 20px;
-  }
-}
-/* --- R Side --- */
-.r-side {
-  img {
-    width: 100%;
+  .countdown__label {
+    font-size: .9em;
   }
 }
 /* --- Head --- */
-.head-title {
+.head {
+  margin-bottom: 60px;
+  h4 {
+    margin: 0 0 14px 0;
+  }
   h2 {
-    width: 200px;
-    margin: 0;
-  }
-  .btn {
-    top: -36px;
-    right: 5px;
+    font-size: 2.767em;
   }
 }
-/* --- List News ---- */
-.list-news {
-  .item {
-    border: none;
-    &:first-of-type {
-      img {
-        width: 100%;
-      }
-      .caption {
-        max-height: 115px;
-      }
-    }
-    img {
-      width: 100%;
-    }
-  }
-  .field-news {
-    padding: 0 15px;
-    margin-top: 10px;
-  }
-  .col-md-3 {
-    width: 100%;
-    .caption {
-      padding: 0;
-    }
-  }
-  .col-md-9 {
-    width: 100%;
-    .caption {
-      padding: 0;
-    }
-  }
-  .detail {
-    margin-bottom: 0;
+/* --- List --- */
+.list {
+  .col-md-4 {
+    padding: 15px 50px;
   }
 }
-/* --- List Mini ---- */
-.list-mini {
-  .caption {
-    width: 85%;
+/* --- About --- */
+.profile {
+  width: 100%;
+  padding: 0;
+  text-align: center !important;
+  h3 {
+    margin: 0 0 7px 0;
+    font-size: 2.3rem;
+  }
+  h4 {
+    margin: 0 0 20px 0;
+  }
+  p {
+    font-size: 1.1rem;
   }
 }
-/* --- Detail News ---- */
-.detail-news {
-  .category {
-    font-size: 14px;
-  }
-  .title{
-    font-size: 24px;
-  }
-  .author {
-    color: #EEE;
-    padding-bottom: 3px;
-  }
-  .date {
-    color: #CACACA;
-    font-size: 12px;
-  }
-  .caption-image {
-    padding: 7px 10px;
-  }
-  .column {
-    margin: 25px 0;
-  }
-  .r-inside {
+.about {
+  .photo {
     display: none;
   }
-  .article {
-    width: 100%;
-    padding: 0 20px;
+}
+/* --- Memorable Days --- */
+.memorable-days {
+  h3 {
+    font-size: 2.22rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  img {
+    display: none;
   }
 }
-
-/*
-  Footer
--------------------------------------*/
-footer {
-  padding: 1.5em 1em 2em;
-}
-/* --- Logo Footer --- */
-.logo-footer {
-  text-align: center;
-}
-/* --- Nav Footer --- */
-.nav-footer {
-  padding: 0 10px;
-  ul {
-    li {
-      display: block;
-      padding: 0;
-      margin-bottom: 8px;
+/* --- Wedding Journal --- */
+.wedding-journal {
+  .list {
+    .col-md-4 {
+      padding: 15px 30px;
       text-align: center;
     }
-  }
-}
-/* --- Contributor --- */
-.contributor {
-  text-align: center;
-  .col-md-2 {
-    height: 40px;
-  }
-}
-/* --- Sitemap --- */
-.sitemap{
-  text-align: center;
-  .col-md-2 {
-    margin-bottom: 12px;
-  }
-}
-/* --- Copyright --- */
-.copyright {
-  a {
-    font-size: 10px;
-  }
-  .create-by-arif-lutfhansah {
-    font-size: 10px;
-  }
-  .privacy {
-    line-height: 1.2;
-    li {
-      padding: 0 5px;
+    h3 {
+      margin: 20px 0 0;
+      font-size: 1.22rem;
+      span {
+        padding-right: 3px;
+        font-size: 2.12rem;
+      }
+    }
+    h5 {
+      font-size: 1.25rem;
     }
   }
+}
+/* --- Gallery --- */
+.gallery {
+  padding: 100px 0 !important;
 }

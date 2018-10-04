@@ -11,10 +11,10 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
-.bx-wapper, .bx-viewport {
+.slider-1 .bx-wapper,.slider-1 .bx-viewport {
   height: 100vh !important;
 }
-.bx-wrapper:before, .bx-wrapper:after {
+.slider-1 .bx-wrapper:before,.slider-1 .bx-wrapper:after {
   position: absolute;
   content: "";
   top: 0;
@@ -27,15 +27,25 @@
   background-size: cover;
   z-index: 3;
 }
-.bx-wrapper:after {
+.slider-1 .bx-wrapper:after {
   top: inherit;
   bottom: 0;
   height: 249px;
   background-image: url(../images/decoration_bottom.png);
 }
+.family-women .bx-wrapper img, .family-men .bx-wrapper img, .gallery img, .wedding-journal img {
+  -webkit-mask-image: url(../images/mask_square.png);
+  mask-image: url(../images/mask_square.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+}
 .overlay {
   background: #fff;
-  height: 100vh;
+  height: 1280px;
   width: 100%;
   position: absolute;
   top: 0px;
@@ -58,9 +68,6 @@ ul.bxslider {
 }
 /** THEME
 ===================================*/
-.bx-wrapper {
-  background: #fff;
-}
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
@@ -88,7 +95,8 @@ ul.bxslider {
   padding-top: 20px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
+  background: #FFF;
+  border: 1px solid #96327D;
   text-indent: -9999px;
   display: block;
   width: 10px;
@@ -102,7 +110,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
+  background: #96327D;
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {

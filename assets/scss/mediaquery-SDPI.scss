@@ -22,84 +22,137 @@ Contents  :
 /* --- Logo --- */
 .logo {
   img {
-    padding: 92px 0;
+    padding: 34px 0;
     zoom: .4;
   }
 }
 /* --- Nav --- */
 nav {
-  ul {
-    a {
-      padding: 0 3px;
+  height: 55px;
+  a.sidenav-trigger {
+    height: 55px;
+    color: #96327D;
+    line-height: 55px;
+    i {
+      height: 55px;
+      line-height: 55px;
     }
   }
+  ul {
+    a {
+      padding: 0 4px;
+    }
+  }
+}
+#nav-mobile {
+  display: none;
+}
+/* --- Slicknav --- */
+.slicknav {
+  display: block;
 }
 
 /*
   Main
 -------------------------------------*/
-/* --- News --- */
-.news {
-  .title {
-    font-size: 16px;
-    line-height: 22px;
-  }
+/* --- Slider --- */
+.slider .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 19%;
 }
-.medium {
-  .news {
-    height: 335px;
-  }
+.slider .bx-wrapper, .bx-viewport {
+    height: 520px !important; //provide height of slider
 }
-.small {
-  .news {
-    img {
-      height: 100px;
+.slider .bx-controls {
+  display: none;
+}
+/* --- Tagline --- */
+.tagline {
+  top: 130px;
+  h1 {
+    font-size: 6.367em;
+  }
+  .date {
+    &:before, &:after {
+      top: 172px;
     }
   }
 }
-/* --- Latest --- */
-.latest-list {
-  .col-md-4 {
-    height: 310px;
+.countdown {
+  top: 60px;
+  .countdown__item {
+    padding: 7px 20px;
+  }
+  .countdown__timer {
+    font-size: 2.4em;
+  }
+  .countdown__label {
+    font-size: .9em;
   }
 }
-/* --- R Side --- */
-.r-side {
-  img {
+/* --- Head --- */
+.head {
+  margin-bottom: 60px;
+  h4 {
+    margin: 0 0 14px 0;
+  }
+  h2 {
+    font-size: 2.767em;
+  }
+}
+/* --- List --- */
+.list {
+  .col-md-4 {
+    padding: 15px 50px;
+  }
+}
+/* --- About --- */
+.profile {
+  width: 100%;
+  padding: 0;
+  text-align: center !important;
+}
+.about {
+  .photo {
+    display: none;
+  }
+}
+/* --- Memorable Days --- */
+.memorable-days {
+  .col-md-6 {
     width: 100%;
   }
+  h3 {
+    font-size: 2.22rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  img {
+    display: none;
+  }
 }
-/* --- List News ---- */
-.list-news {
-  .item {
-    &:first-of-type {
-      img {
-        width: 255px;
-      }
-      .caption {
-        max-height: 115px;
+/* --- Wedding Journal --- */
+.wedding-journal {
+  .list {
+    .col-md-4 {
+      padding: 15px 30px;
+      text-align: center;
+    }
+    h3 {
+      margin: 20px 0 0;
+      font-size: 1.22rem;
+      span {
+        padding-right: 3px;
+        font-size: 2.12rem;
       }
     }
-  }
-  .col-md-9 {
-    width: 340px;
-    .caption {
-      padding: 0;
+    h5 {
+      font-size: 1.25rem;
     }
   }
 }
-/* --- List Mini ---- */
-.list-mini {
-  .caption {
-    width: 135px;
-  }
-}
-/* --- Detail News ---- */
-.detail-news {
-  .r-inside {
-    width: 15%;
-  }
-  .article {
-    width: 81%;
-  }
+/* --- Gallery --- */
+.gallery {
+  padding: 100px 0 !important;
 }
