@@ -30,6 +30,7 @@ Contents  :
 /* --- Nav --- */
 nav {
   height: 55px;
+  background-color: #FFF;
   a.sidenav-trigger {
     height: 55px;
     color: #96327D;
@@ -66,7 +67,7 @@ section.content {
   top: 19%;
 }
 .slider .bx-wrapper, .bx-viewport {
-    height: 520px !important; //provide height of slider
+  height: 520px !important; //provide height of slider
 }
 .slider .bx-wrapper {
   margin-bottom: 0;
@@ -89,15 +90,18 @@ section.content {
     font-size: 1.757em;
   }
   .date {
-    &:before, &:after {
-      top: 172px;
+    &:before {
+      top: 123px;
     }
   }
 }
 .countdown {
-  top: 60px;
+  top: 90px;
   .countdown__item {
     padding: 7px 20px;
+    &:last-of-type {
+      display: none;
+    }
   }
   .countdown__timer {
     font-size: 2.4em;
@@ -125,18 +129,19 @@ section.content {
 /* --- About --- */
 .profile {
   width: 100%;
+  height: 480px;
   padding: 0;
   text-align: center !important;
   h3 {
     margin: 0 0 7px 0;
     font-size: 2.3rem;
   }
-  h4 {
-    margin: 0 0 20px 0;
-  }
   p {
     font-size: 1.1rem;
   }
+}
+.woman .profile {
+  height: 415px;
 }
 .about {
   .photo {
@@ -145,6 +150,7 @@ section.content {
 }
 /* --- Memorable Days --- */
 .memorable-days {
+  margin-bottom: 75px;
   h3 {
     font-size: 2.22rem;
   }

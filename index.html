@@ -73,40 +73,40 @@
         <div><img src="assets/images/slider_02.jpg"></div>
         <div><img src="assets/images/slider_03.jpg"></div>
       </div>
-    </section>
-    <!-- Tagline -->
-    <section class="tagline">
-      <div class="container">
-        <h1>Arif & Riska</h1>
-        <h4>Getting Married</h4>
-        <div class="date">
-          <h3>8 December 2018</h3>
+      <!-- Tagline -->
+      <div class="tagline wow fadeInUp" data-wow-duration="3s">
+        <div class="container">
+          <h1>Arif & Riska</h1>
+          <h4>Getting Married</h4>
+          <div class="date">
+            <h3>8 December 2018</h3>
+          </div>
+          <div class="countdown wow fadeInUp">
+            <div id="js-countdown">
+              <div class="countdown__item">
+                <div class="countdown__timer js-countdown-days" aria-labelledby="day-countdown">
+                </div>
+                <div class="countdown__label" id="day-countdown">Hari</div>
+              </div>
+              <div class="countdown__item">
+                <div class="countdown__timer js-countdown-hours" aria-labelledby="hour-countdown">
+                </div>
+                <div class="countdown__label" id="hour-countdown">Jam</div>
+              </div>
+              <div class="countdown__item">
+                <div class="countdown__timer js-countdown-minutes" aria-labelledby="minute-countdown">
+                </div>
+                <div class="countdown__label" id="minute-countdown">Menit</div>
+              </div>
+              <div class="countdown__item">
+                <div class="countdown__timer js-countdown-seconds" aria-labelledby="second-countdown">
+                </div>
+                <div class="countdown__label" id="second-countdown">Detik</div>
+              </div>
+          </div>
+          </div>
         </div>
-        <div class="countdown">
-          <div id="js-countdown">
-            <div class="countdown__item">
-              <div class="countdown__timer js-countdown-days" aria-labelledby="day-countdown">
-              </div>
-              <div class="countdown__label" id="day-countdown">Hari</div>
-            </div>
-            <div class="countdown__item">
-              <div class="countdown__timer js-countdown-hours" aria-labelledby="hour-countdown">
-              </div>
-              <div class="countdown__label" id="hour-countdown">Jam</div>
-            </div>
-            <div class="countdown__item">
-              <div class="countdown__timer js-countdown-minutes" aria-labelledby="minute-countdown">
-              </div>
-              <div class="countdown__label" id="minute-countdown">Menit</div>
-            </div>
-            <div class="countdown__item">
-              <div class="countdown__timer js-countdown-seconds" aria-labelledby="second-countdown">
-              </div>
-              <div class="countdown__label" id="second-countdown">Detik</div>
-            </div>
-        </div>
-        </div>
-      </div>
+      <div>
     </section>
     <!-- About -->
     <section class="about content">
@@ -281,10 +281,44 @@
         </div>
       </div>
     </section>
-    <!-- Event 
+    <!-- Event -->
     <section class="event content">
-      <div class="container"></div>
-    </section> -->
+      <div class="container clearfix">
+        <div class="akad col-md-6">
+          <div class="inner">
+            <h2>Wedding Ceremony</h2>
+            <div class="time clearfix">
+              <div class="clock col-md-6">
+                <i class="material-icons">access_time</i>
+              </div>
+              <div class="datee col-md-6">
+                <i class="material-icons">date_range</i>
+              </div>
+            </div>
+            <div class="place">
+              <h4>Royel Club</h4>
+              <h5>320 Church Street</h5>
+              <h6>Huntsville, Alabama</h6>
+            </div>
+            <p>Randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing</p>
+          </div>
+        </div>
+        <div class="wedd col-md-6">
+          <div class="inner">
+            <h2>Wedding Ceremony</h2>
+            <div class="time clearfix">
+              <div class="clock col-md-6"></div>
+              <div class="datee col-md-6"></div>
+            </div>
+            <div class="place">
+              <h4>Royel Club</h4>
+              <h5>320 Church Street</h5>
+              <h6>Huntsville, Alabama</h6>
+            </div>
+            <p>Randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing</p>
+          </div>
+      </div>
+    </section>
     <!-- Gallery -->
     <section class="gallery content">
       <div class="container">
@@ -372,7 +406,7 @@
     </section>
 	</main>
 	<footer>
-    <div class="container wow fadeInUp">
+    <div class="container wow fadeInUp" data-wow-duration="2s">
       <h2>Thank You</h2>
       <h5>For Being With Us</h5>
     </div>
@@ -383,6 +417,8 @@
   <script src='assets/js/jquery.bxslider.js'></script> <!-- BX Slider JS -->
 	<script>
 		$(document).ready(function() {
+      /* --- Membuat Efek Animasi --- */
+      new WOW().init();
       /* Splash Screen */
       document.body.style.overflow = 'hidden';
       $(".splash").fadeOut(5, function() {
@@ -417,7 +453,7 @@
         if ( $(window).width() > 992) { 
           if ($(this).scrollTop() > 160){  
             $("nav").css({"height": "68px", "line-height": "70px", "background-color": "rgba(255,255,255,1)"});
-            $(".logo img").css({"padding": "16px 0"});
+            $(".logo img").css({"padding": "14px 0"});
           }
           else{
             $("nav").css({"height": "88px", "line-height": "88px", "background-color": "rgba(255,255,255,.6)"});
