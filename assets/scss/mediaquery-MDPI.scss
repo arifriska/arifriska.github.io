@@ -50,3 +50,32 @@ Contents  :
     }
   }
 }
+/* --- Event --- */
+.event {
+  h2 {
+    font-size: 2.7rem;
+  }
+  .time {
+    margin: 65px 0 30px;
+    p {
+      font-size: 1.1em;
+    }
+  }
+  .place {
+    &:after {
+      top: 431px;
+    }
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}

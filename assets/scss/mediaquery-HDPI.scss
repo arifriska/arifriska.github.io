@@ -41,28 +41,32 @@ nav {
 .countdown {
   top: 90px;
 }
-/* --- List News ---- */
-.list-news {
-  .item {
-    &:first-of-type {
-      img {
-        width: 365px;
-      }
+/* --- Event --- */
+.event {
+  h2 {
+    font-size: 2.7rem;
+  }
+  .time {
+    margin: 65px 0 30px;
+    p {
+      font-size: 1.1em;
     }
   }
-  .col-md-9 {
-    width: 560px;
+  .place {
+    &:after {
+      top: 431px;
+    }
   }
-}
-/* --- List Mini ---- */
-.list-mini {
-  .caption {
-    width: 195px;
+  h4 {
+    font-size: 2.2rem;
   }
-}
-/* --- Detail News ---- */
-.detail-news {
-  .article {
-    width: 580px;
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }

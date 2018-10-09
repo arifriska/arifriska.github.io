@@ -61,21 +61,18 @@ nav {
   position: absolute;
   top: 19%;
 }
-.slider .bx-wrapper, .bx-viewport {
-    height: 520px !important; //provide height of slider
-}
 .slider .bx-controls {
   display: none;
 }
 /* --- Tagline --- */
 .tagline {
-  top: 130px;
+  top: 110px;
   h1 {
     font-size: 6.367em;
   }
   .date {
     &:before {
-      top: 123px;
+      top: 173px;
     }
   }
 }
@@ -161,4 +158,37 @@ nav {
 /* --- Gallery --- */
 .gallery {
   padding: 100px 0 !important;
+}
+/* --- Event --- */
+.event {
+  h2 {
+    font-size: 2.7rem;
+    &:after {
+      top: 158px;
+    }
+  }
+  .time {
+    margin: 65px 0 30px;
+    p {
+      font-size: .9em;
+    }
+  }
+  .place {
+    margin-bottom: 75px;
+    &:after {
+      top: 463px;
+    }
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: .9rem;
+  }
 }
