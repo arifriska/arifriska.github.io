@@ -1,26 +1,22 @@
 /*
-Error: Invalid property: "Backtrace:" (no value).
-        on line 4 of sass
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
+        on line 40 of sass
 
-1: /*
-2: Errno::ENOENT: No such file or directory @ rb_sysopen - sass
-3: 
-4: Backtrace:
-5: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `read'
-6: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-7: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-8: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-9: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+35: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
+36: /usr/local/bin/sass:22:in `load'
+37: /usr/local/bin/sass:22:in `<main>'
+38: *\/
+39: body:before {
+40:   white-space: pre;
+41:   font-family: monospace;
+42:   content: "Error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of sass\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - sass\A 3: \A 4: Backtrace:\A 5: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `read'\A 6: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'\A 7: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'"; }
 
 Backtrace:
-sass:4
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:759:in `parse_property'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:708:in `parse_property_or_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:667:in `parse_line'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:540:in `build_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:559:in `block in append_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:558:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:558:in `append_children'
+sass:40
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:494:in `block in tabulate'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:452:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:452:in `each_with_index'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:452:in `tabulate'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:417:in `_to_tree'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:290:in `render'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:464:in `update_stylesheet'
@@ -39,4 +35,4 @@ sass:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of sass\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - sass\A 3: \A 4: Backtrace:\A 5: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `read'\A 6: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'\A 7: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'"; }
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 40 of sass\A \A 35: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'\A 36: /usr/local/bin/sass:22:in `load'\A 37: /usr/local/bin/sass:22:in `<main>'\A 38: */\A 39: body:before {\A 40:   white-space: pre;\A 41:   font-family: monospace;\A 42:   content: \"Error: Invalid property: \\"Backtrace:\\" (no value).\A         on line 4 of sass\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - sass\A 3: \A 4: Backtrace:\A 5: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `read'\A 6: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'\A 7: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'\A 8: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'\A 9: /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'\"; }"; }

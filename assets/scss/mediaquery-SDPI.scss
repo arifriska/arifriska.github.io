@@ -100,7 +100,7 @@ nav {
 }
 /* --- List --- */
 .list {
-  .col-md-4 {
+  .col-md-3, .col-md-4 {
     padding: 15px 50px;
   }
 }
@@ -158,13 +158,22 @@ nav {
 /* --- Gallery --- */
 .gallery {
   padding: 100px 0 !important;
+  .list {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 /* --- Event --- */
 .event {
+  .inner {
+    width: calc(100% - 35px);
+  }
   h2 {
     font-size: 2.7rem;
     &:after {
-      top: 158px;
+      top: 128px;
     }
   }
   .time {
@@ -176,7 +185,7 @@ nav {
   .place {
     margin-bottom: 75px;
     &:after {
-      top: 463px;
+      top: 480px;
     }
   }
   h4 {

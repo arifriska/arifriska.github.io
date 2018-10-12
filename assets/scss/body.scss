@@ -30,6 +30,16 @@ div {
   -webkit-tap-highlight-color: transparent;
   -moz-outline-: none;
 }
+.family-women img, .family-men img, .gallery img, .wedding-journal img {
+  -webkit-mask-image: url('../images/mask_square.png');
+  mask-image: url('../images/mask_square.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+}
 /* --- Head --- */
 .head {
   margin-bottom: 80px;
@@ -79,10 +89,21 @@ div {
     z-index: 99;
   }
 }
+/* --- Family --- */
+.family {
+  .list {
+    margin-bottom: 120px;
+  }
+}
 /* --- List --- */
 .list {
+  .col-md-3 {
+    padding: 0 20px;
+  }
   .col-md-4 {
     padding: 0 50px;
+  }
+  .col-md-3, .col-md-4 {
     text-align: center;
   }
   img {
@@ -378,14 +399,9 @@ div {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   }
 }
-/* --- Family--- */
-.family {
-  .family-men {
-    margin-bottom: 170px;
-  }
-}
 /* --- Wedding Journal --- */
 .wedding-journal {
+  padding: 130px 0 !important;
   .list {
     .col-md-4 {
       padding: 0 30px;
@@ -433,6 +449,12 @@ div {
   .col-md-4 {
     margin: 10px 0;
   }
+  .list {
+    img {
+      width: 290px;
+      height: 254px;
+    }
+  }
   .button {
     text-align: center;
   }
@@ -459,8 +481,4 @@ div {
       background-color: #fff;
     }
   }
-}
-/* --- Map --- */
-section.map {
-  padding: 130px 0;
 }
