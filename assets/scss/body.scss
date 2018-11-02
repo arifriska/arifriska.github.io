@@ -236,6 +236,9 @@ div {
   }
 }
 .man {
+  .photo {
+    float: right;
+  }
   figure {
     text-align: right;
   }
@@ -362,6 +365,11 @@ div {
     background-position: center center;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+  .photo {
+    &.pull-right {
+      float: right;
+    }
   }
   .item {
     margin-bottom: 95px;

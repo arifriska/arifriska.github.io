@@ -58,9 +58,6 @@ nav {
 /*
   Main
 -------------------------------------*/
-section.content {
-  padding: 0 15px;
-}
 /* --- Slider --- */
 .slider .bx-wrapper .bx-controls-direction a {
   position: absolute;
@@ -144,21 +141,38 @@ section.content {
   height: 415px;
 }
 .about {
+  &.content {
+    padding: 40px 0 0 0;
+  }
+  .man {
+    margin-bottom: 90px;
+  }
+  .profile {
+    height: auto;
+  }
   .photo {
-    display: none;
+    float: none;
+    margin: 0 auto 40px;
+    figure {
+      text-align: center !important;
+    }
+    img {
+      width: 230px;
+      height: 230px;
+    }
   }
 }
 /* --- Memorable Days --- */
 .memorable-days {
   margin-bottom: 75px;
+  .item {
+    margin-bottom: 45px;
+  }
   h3 {
     font-size: 2.22rem;
   }
   p {
     font-size: 1.1rem;
-  }
-  img {
-    display: none;
   }
 }
 /* --- Event --- */

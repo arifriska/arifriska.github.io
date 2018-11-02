@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.myapp.mobile" version="2.25" xmlns="http://www.w3.org/ns/widgets">
+  <name>Our Wedding</name>
+  <description>Arif dan Riska Wedding</description>
+  <author email="pesan.arif@gmail.com" href="http://www.beruangair.github.io">Amazing App Team</author>
+  <preference name="phonegap-version" value="cli-6.5.0" />
+  <preference name="permissions" value="none" />
+  <preference name="orientation" value="portrait" />
+  <preference name="target-device" value="universal" />
+  <preference name="fullscreen" value="false" />
+
+  <plugin name="cordova-plugin-inappbrowser" spec="1.3.0" />
+  <plugin name="cordova-plugin-device" spec="1.1.2" />
+  <plugin name="cordova-plugin-splashscreen" spec="3.2.2" />
+
+  <icon src="icon.png" />
+  
+  <splash platform="android" qualifier="port-ldpi" src="assets/images/screen-ldpi-portrait.png" />
+  <splash platform="android" qualifier="port-mdpi" src="assets/images/screen-mdpi-portrait.png" />
+  <splash platform="android" qualifier="port-hdpi" src="assets/images/screen-hdpi-portrait.png" />
+  <splash platform="android" qualifier="port-xhdpi" src="assets/images/screen-xhdpi-portrait.png" />
+   
+  <splash platform="android" qualifier="land-ldpi" src="assets/images/screen-ldpi-portrait.png" />
+  <splash platform="android" qualifier="land-mdpi" src="assets/images/screen-mdpi-portrait.png" />
+  <splash platform="android" qualifier="land-hdpi" src="assets/images/screen-hdpi-portrait.png" />
+  <splash platform="android" qualifier="land-xhdpi" src="assets/images/screen-xhdpi-portrait.png" />
+
+</widget>

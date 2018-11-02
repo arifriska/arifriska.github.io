@@ -115,13 +115,33 @@ nav {
   height: 415px;
 }
 .about {
+  &.content {
+    padding: 40px 0 0 0;
+  }
+  .man {
+    margin-bottom: 90px;
+  }
+  .profile {
+    height: auto;
+  }
   .photo {
-    display: none;
+    float: none;
+    margin: 0 auto 40px;
+    figure {
+      text-align: center !important;
+    }
+    img {
+      width: 270px;
+      height: 270px;
+    }
   }
 }
 /* --- Memorable Days --- */
 .memorable-days {
   margin-bottom: 75px;
+  .item {
+    margin-bottom: 15px;
+  }
   .col-md-6 {
     width: 100%;
   }
@@ -132,7 +152,10 @@ nav {
     font-size: 1.1rem;
   }
   img {
-    display: none;
+    display: block;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
   }
 }
 /* --- Wedding Journal --- */
