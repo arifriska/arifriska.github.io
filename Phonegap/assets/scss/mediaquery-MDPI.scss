@@ -1,0 +1,81 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for MDPI (width 993px-1082px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+
+
+/*
+  Main
+-------------------------------------*/
+/* --- Slider --- */
+.bx-wrapper .bx-controls-direction a {
+  top: 23%;
+}
+/* --- Tagline --- */
+.tagline {
+  top: 160px;
+}
+.countdown {
+  top: 90px;
+}
+/* --- About --- */
+.profile {
+  padding: 70px 0;
+}
+.about {
+  .photo {
+    img {
+      width: 289px;
+      height: 289px;
+      border-radius: 100%;
+      background-color: #fdfafd;
+      border: 1px dotted #96327D;
+    }
+  }
+}
+/* --- Event --- */
+.event {
+  h2 {
+    font-size: 2.7rem;
+  }
+  .time {
+    margin: 65px 0 30px;
+    p {
+      font-size: 1.1em;
+    }
+  }
+  .place {
+    &:after {
+      top: 431px;
+    }
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}

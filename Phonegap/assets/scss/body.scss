@@ -1,0 +1,496 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Contents  :
+  1: Body Section
+  
+========================================================================== */
+
+/*
+  Body
+-------------------------------------*/
+body {
+  background-image: url('../images/background.png');
+}
+section.content {
+  padding: 130px 0 0 0;
+}
+@mixin animation-delay($time) {
+  -webkit-animation-delay: $time;
+     -moz-animation-delay: $time;
+      -ms-animation-delay: $time;
+       -o-animation-delay: $time;
+          animation-delay: $time;
+}
+div {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-outline-: none;
+}
+.family-women img, .family-men img, .gallery img, .wedding-journal img {
+  -webkit-mask-image: url('../images/mask_square.png');
+  mask-image: url('../images/mask_square.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+}
+/* --- Head --- */
+.head {
+  margin-bottom: 80px;
+  position: relative;
+  color: #96327D;
+  text-align: center;
+  z-index: 6;
+  h2 {
+    margin: 0;
+    font-size: 3.267em;
+  }
+  h4 {
+    margin-bottom: 18px;
+    font-size: 1.533em;
+  }
+}
+/* --- Slider --- */
+.slider {
+  .bx-prev {
+    opacity: 0;
+    @include transition(.3s);
+  }
+  .bx-next {
+    opacity: 0;
+    @include transition(.3s);
+  }
+  &:hover {
+    .bx-prev {
+      opacity: 1;
+      left: 50px;
+    }
+    .bx-next {
+      opacity: 1;
+      right: 50px;
+    }
+  }
+}
+.slider .bx-wrapper {
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,.7);
+    z-index: 99;
+  }
+}
+/* --- Family --- */
+.family {
+  .list {
+    margin-bottom: 120px;
+  }
+}
+/* --- List --- */
+.list {
+  .col-md-3 {
+    padding: 0 20px;
+  }
+  .col-md-4 {
+    padding: 0 50px;
+  }
+  .col-md-3, .col-md-4 {
+    text-align: center;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  h3 {
+    margin: 20px 0 0;
+    font-size: 1.92rem;
+  }
+  h5 {
+    margin: 10px 0 0;
+    color: #96327D;
+    font-size: 1.25rem;
+  }
+}
+/* --- Tagline --- */
+.tagline {
+  position: absolute;
+  width: 100%;
+  top: 260px;
+  z-index: 9;
+  text-align: center;
+  &:hover {
+    .bx-prev {
+      opacity: 1;
+      left: 50px;
+    }
+    .bx-next {
+      opacity: 1;
+      right: 50px;
+    }
+  }
+  h1 {
+    font-size: 8.367em;
+    margin: 0;
+    margin-bottom: 11px;
+    font-weight: 700;
+  }
+  h4 {
+    margin: 0;
+    font-size: 1.957em;
+    margin-bottom: 57px;
+    font-weight: 400 !important;
+  }
+  .date {
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      top: 210px;
+      left: 0;
+      height: 20px;
+      width: 100%;
+      background-image: url('../images/ornamen_date.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    &:after {
+      background-image: url('../images/ornamen_date_02.png');
+      top: inherit;
+    }
+    h3 {
+      margin: 0;
+      font-size: 1.633em;
+      font-weight: 700;
+    }
+  }
+}
+.countdown {
+  position: relative;
+  top: 170px;
+  @include animation-delay(.5s);
+  .countdown__item {
+    font-family: 'Great Vibes', cursive;
+    display: inline-block;
+    padding: 25px 40px;
+    margin: 0 4px;
+    color: #96327D;
+    font-weight: 700;
+    border: 1px dotted #96327D;
+    border-radius: 50%;
+  }
+  .countdown__timer {
+    font-size: 3.4em;
+    line-height: 1;
+  }
+  .countdown__label {
+    font-size: 1.2em;
+  }
+}
+/* --- About --- */
+.about .container {
+  background-image: url('../images/ornamen_profile.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.profile {
+  display: table-cell;
+  height: 409px;
+  padding: 120px 0;
+  vertical-align: middle;
+  h3 {
+    margin: 0 0 13px 0;
+    font-size: 3.1rem;
+  }
+  h4 {
+    margin: 0 0 30px 0;
+    font-size: 1.5rem;
+    font-weight: 400 !important;
+  }
+  p {
+    color: #96327D;
+    font-size: 1.15rem;
+  }
+}
+.about {
+  .photo {
+    figure {
+      margin: 1em 40px;
+    }
+    img {
+      width: 409px;
+      height: 409px;
+      object-fit: cover;
+      border-radius: 100%;
+      background-color: #fdfafd;
+      border: 1px dotted #96327D;
+    }
+  }
+}
+.man {
+  .photo {
+    float: right;
+  }
+  figure {
+    text-align: right;
+  }
+  img {
+    text-align: right;
+  }
+}
+.woman {
+  figure {
+    text-align: left;
+  }
+  img {
+    text-align: right;
+  }
+  .profile {
+    text-align: right;
+  }
+}
+/* --- Event --- */
+.event {
+  background-image: url('../images/background_event.jpg');
+  position: relative;
+  padding: 130px 0 !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+  }
+  &:after {
+    top: inherit;
+    bottom: 0;
+    background-image: url('../images/ornamen_bottom.png');
+    background-position: bottom center;
+  }
+  .inner {    
+    position: relative;
+    width: calc(100% - 140px);
+    padding: 30px 43px 50px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('../images/background_paper.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+  h2 {
+    font-size: 3.3rem;
+    &:after {
+      position: absolute;
+      content: "";
+      top: 128px;
+      left: 0;
+      height: 20px;
+      width: 100%;
+      background-image: url(../images/ornamen_event.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  .time {
+    margin: 65px 0 40px;
+    i, p {
+      color: #96327D;
+    }
+    p {
+      margin: 6px 0;
+      font-size: 1.1em;
+    }
+  }
+  .place {
+    margin-bottom: 95px;
+    &:after {
+      position: absolute;
+      content: "";
+      top: 453px;
+      left: 0;
+      height: 20px;
+      width: 100%;
+      background-image: url(../images/ornamen_event.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 400 !important;
+  }
+  h5 {
+    margin: 22px 0;
+    color: #96327D;
+    font-size: 1.34rem;
+  }
+  h6 {
+    color: #96327D;
+    font-size: 1.04rem;
+  }
+  p {
+    color: #96327D;
+    font-size: 1.1rem;
+  }
+}
+/* --- Memorable Days --- */
+.memorable-days {
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 61px;
+    background-image: url('../images/separator.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .photo {
+    &.pull-right {
+      float: right;
+    }
+  }
+  .item {
+    margin-bottom: 95px;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+  .caption {
+    text-align: center;
+  }
+  h3 {
+    margin: 20px 0 25px 0;
+    font-size: 3.12rem;
+  }
+  h4 {
+    margin: 0 0 25px 0;
+    font-size: 1.62rem;
+  }
+  p {
+    color: #96327d;
+    font-size: 1.2rem;
+    line-height: 160%;
+  }
+  img {
+    max-width: 100%;
+    -webkit-mask-image: url('../images/mask_flower.png');
+    mask-image: url('../images/mask_flower.png');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 60%;
+    mask-size: 60%;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  }
+}
+/* --- Wedding Journal --- */
+.wedding-journal {
+  padding: 130px 0 !important;
+  .list {
+    .col-md-4 {
+      padding: 0 30px;
+      text-align: left;
+    }
+    h3 {
+      margin: 30px 0 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      font-size: 1.62rem;
+      font-weight: 500 !important;
+      span {
+        padding-right: 5px;
+        font-size: 3.12rem;
+        font-weight: 700;
+      }
+    }
+    h5 {
+      font-size: 1.55rem;
+      font-weight: 600;
+    }
+    .ornamen_journal {
+      width: 168px;
+      margin: 6px 0 15px;
+    }
+  }
+}
+/* --- Gallery --- */
+.gallery {
+  background-image: url('../images/bg_photo.jpg');
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 240px 0 !important;
+  background-attachment: fixed;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,.7);
+  }
+  .col-md-4 {
+    margin: 10px 0;
+  }
+  .list {
+    img {
+      width: 290px;
+      height: 254px;
+    }
+  }
+  .button {
+    text-align: center;
+  }
+  .more {
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+    width: 220px;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+    background-color: #96327d;
+    border: 1px solid #96327d;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    z-index: 99;
+    @include transition(.3s);
+    &:hover {
+      color: #96327d;
+      background-color: #fff;
+    }
+  }
+}
+.click {
+  display: none;
+  text-align: center;
+}

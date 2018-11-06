@@ -1,0 +1,57 @@
+$pink: #E91E63;
+$speed: 5s;
+$base: 200px;
+
+.splash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  z-index: 9999;
+}
+footer { position: absolute; bottom: 5%; left: 0; width: 100%; text-align: center; font-family: Arial, sans-serif;
+  a { color: $pink; }
+}
+.love { position: absolute; top: 50%; left: 50%; width: $base; height: $base; margin-left: -($base / 2); margin-top: -($base / 2);
+  &:before { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-radius: 50%; background-color: $pink; animation: outer-circle $speed infinite linear; transform: translateX(-50%) translateY(-50%); }
+  &:after { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-radius: 50%; background-color: #fff; animation: inner-circle $speed infinite linear; transform: translateX(-50%) translateY(-50%); }
+}
+.fa-heart { position: absolute; top: 50%; left: 50%; color: $pink; transform: translateX(-50%) translateY(-50%); z-index: 99;
+  &:before { opacity: 0; animation: small-heart $speed infinite linear; transform: translateX(-50%) translateY(-50%); }
+  &:after { content: '\f004'; position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); animation: big-heart $speed infinite linear; }
+}
+@keyframes outer-circle {
+  2%   { opacity: 1; }
+  9%   { width: $base; height: $base; transform: translateX(-50%) translateY(-50%); }
+  12%   { width: ($base - 10); height: ($base - 10); transform: translateX(-50%) translateY(-50%); opacity: 0; }
+  100% { width: ($base - 10); height: ($base - 10); transform: translateX(-50%) translateY(-50%); opacity: 0; }
+}
+@keyframes inner-circle {
+  10%  { width: $base; height: $base; transform: translateX(-50%) translateY(-50%); }
+  100% { width: $base; height: $base; transform: translateX(-50%) translateY(-50%); }
+}
+@keyframes big-heart {
+  0%   { font-size: 0; opacity: .6; }
+  3%  { font-size: 0; opacity: .6; }
+  13%  { font-size: ($base / 1.5); opacity: 0; }
+  100% { font-size: ($base / 1.5); opacity: 0; }
+}
+@keyframes small-heart {
+  0%   { font-size: 0; opacity: 0; }
+  10%  { font-size: ($base / 4); opacity: 1; }
+  15%  { font-size: ($base / 7); }
+  20%  { font-size: ($base / 5); }
+  25%  { font-size: ($base / 7); }
+  30%  { font-size: ($base / 6); }
+  35%  { font-size: ($base / 7); }
+  60%  { font-size: ($base / 7); }
+  65%  { font-size: ($base / 5); }
+  70%  { font-size: ($base / 7); }
+  75%  { font-size: ($base / 6); }
+  80%  { color: $pink; font-size: ($base / 7); }
+  100% { font-size: ($base / 7); color: #999; opacity: 1; }
+}
+@keyframes to-grey {
+  0%   { color: $pink; }
+  100% { color: #e8e8e8; }
+}

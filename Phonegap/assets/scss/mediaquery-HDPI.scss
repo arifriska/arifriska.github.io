@@ -1,0 +1,72 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for HDPI (width 1083px-1290px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+/* --- Nav --- */
+nav {
+  ul {
+    a {
+      padding: 0 10px;
+    }
+  }
+}
+/*
+  Main
+-------------------------------------*/
+/* --- Slider --- */
+.bx-wrapper .bx-controls-direction a {
+  top: 22%;
+}
+/* --- Tagline --- */
+.tagline {
+  top: 200px;
+}
+.countdown {
+  top: 90px;
+}
+/* --- Event --- */
+.event {
+  h2 {
+    font-size: 2.7rem;
+  }
+  .time {
+    margin: 65px 0 30px;
+    p {
+      font-size: 1.1em;
+    }
+  }
+  .place {
+    &:after {
+      top: 431px;
+    }
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}

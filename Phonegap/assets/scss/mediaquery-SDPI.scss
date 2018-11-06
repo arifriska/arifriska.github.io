@@ -1,0 +1,229 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Arif Lutfhansah
+Create        :  20 April 2018
+Last Update   :  20 April 2018
+
+Source  :
+  1: Arif Framework The MIT License (MIT) Copyright (c) Arif Lutfhansah
+  2: Bootstrap Framework The MIT License (MIT) Copyright (c) Bootstrap
+  3: Materialize Framework The MIT License (MIT) Copyright (c) 2014-2017 Materialize
+
+Contents  :
+  1: Media Query for SDPI (width 769px-992px) Section
+
+  Copyright (c) 2018 Arif Lutfhansah
+  
+========================================================================== */
+
+/*
+  Header
+-------------------------------------*/
+/* --- Logo --- */
+.logo {
+  img {
+    padding: 34px 0;
+    zoom: .4;
+  }
+}
+/* --- Nav --- */
+nav {
+  height: 55px;
+  background-color: #FFF;
+  a.sidenav-trigger {
+    height: 55px;
+    color: #96327D;
+    line-height: 55px;
+    i {
+      height: 55px;
+      line-height: 55px;
+    }
+  }
+  ul {
+    a {
+      padding: 0 4px;
+    }
+  }
+}
+#nav-mobile {
+  display: none;
+}
+/* --- Slicknav --- */
+.slicknav {
+  display: block;
+}
+
+/*
+  Main
+-------------------------------------*/
+/* --- Slider --- */
+.slider .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 19%;
+}
+.slider .bx-controls {
+  display: none;
+}
+/* --- Tagline --- */
+.tagline {
+  top: 110px;
+  h1 {
+    font-size: 6.367em;
+  }
+  .date {
+    &:before {
+      top: 173px;
+    }
+  }
+}
+.countdown {
+  top: 90px;
+  .countdown__item {
+    padding: 7px 20px;
+  }
+  .countdown__timer {
+    font-size: 2.4em;
+  }
+  .countdown__label {
+    font-size: .9em;
+  }
+}
+/* --- Head --- */
+.head {
+  margin-bottom: 60px;
+  h4 {
+    margin: 0 0 14px 0;
+  }
+  h2 {
+    font-size: 2.767em;
+  }
+}
+/* --- List --- */
+.list {
+  .col-md-3, .col-md-4 {
+    padding: 15px 50px;
+  }
+}
+/* --- About --- */
+.profile {
+  width: 100%;
+  height: 480px;
+  padding: 0;
+  text-align: center !important;
+}
+.woman .profile {
+  height: 415px;
+}
+.about {
+  &.content {
+    padding: 40px 0 0 0;
+  }
+  .man {
+    margin-bottom: 90px;
+  }
+  .profile {
+    height: auto;
+  }
+  .photo {
+    float: none;
+    margin: 0 auto 40px;
+    figure {
+      text-align: center !important;
+    }
+    img {
+      width: 270px;
+      height: 270px;
+    }
+  }
+}
+/* --- Memorable Days --- */
+.memorable-days {
+  margin-bottom: 75px;
+  .item {
+    margin-bottom: 15px;
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+  h3 {
+    font-size: 2.22rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  img {
+    display: block;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+  }
+}
+/* --- Wedding Journal --- */
+.wedding-journal {
+  .list {
+    .col-md-4 {
+      padding: 15px 30px;
+      text-align: center;
+    }
+    h3 {
+      margin: 20px 0 0;
+      font-size: 1.22rem;
+      span {
+        padding-right: 3px;
+        font-size: 2.12rem;
+      }
+    }
+    h5 {
+      font-size: 1.25rem;
+    }
+  }
+}
+/* --- Gallery --- */
+.gallery {
+  padding: 100px 0 !important;
+  .list {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+/* --- Event --- */
+.event {
+  .inner {
+    width: calc(100% - 35px);
+  }
+  h2 {
+    font-size: 2.7rem;
+    &:after {
+      top: 128px;
+    }
+  }
+  .time {
+    margin: 65px 0 30px;
+    p {
+      font-size: .9em;
+    }
+  }
+  .place {
+    margin-bottom: 75px;
+    &:after {
+      top: 480px;
+    }
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: .9rem;
+  }
+}
+.click {
+  display: block;
+}
